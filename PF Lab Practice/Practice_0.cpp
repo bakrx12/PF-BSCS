@@ -27,7 +27,8 @@ using namespace std;
 
 int main()
 {
-  //to read a file already present in program's directory
+  //to read a file
+      //if already present in program's directory, just write filename
       //to read file in another directory we have to provide file's path
       //Either directly, or store path in variable and then use it in action
 
@@ -42,5 +43,14 @@ int main()
   {
     cout << "\nFile1.txt exists";
   }
+
+  check.close();
+
+  //to write into a file
+        //already present in program's directory
+  
+  ofstream txt("Text1.txt");
+  txt << "123";
+  txt.close();
   
 }
