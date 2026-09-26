@@ -27,9 +27,9 @@ using namespace std;
 
 int main()
 {
-  //to read a file
+  //to check if a file exist
       //if already present in program's directory, just write filename
-      //to read file in another directory we have to provide file's path
+      //to read file in another directory we have to provide file's path using escape sequence
       //Either directly, or store path in variable and then use it in action
 
       //METHOD 1: by using .open
@@ -47,10 +47,25 @@ int main()
   check.close();
 
   //to write into a file
-        //already present in program's directory
+        //persuming already present in program's directory
   
   ofstream txt("Text1.txt");
   txt << "123";
   txt.close();
+
+  //to read a file (only one line) into console
+  int x;
+  ifstream read("Text1.txt");
+  read >> x;
+  cout << x << endl;
+
+  //to read file and write it into another file (only one line)
+      //persuming both files already exist in directory albiet empty
+  ifstream read("Text1.txt");
+  int reader;
+  ostream write("Text2.txt");
+  read >> reader;
+  write << reader << endl;
+
   
 }
