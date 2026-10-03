@@ -9,8 +9,7 @@ int main() {
     int arr[10] = {0};
     for(int i = 0; i < 10; i++) {
         cout << "Enter number at index " << i << ": ";
-        cin >> arr[i];
-    }
+        cin >> arr[i]; }
 
     cout << "\nMultiples of 3 in the array are: ";
     for(int i = 0; i < 10; i++) {
