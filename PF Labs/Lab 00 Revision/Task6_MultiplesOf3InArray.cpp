@@ -8,17 +8,13 @@ int main() {
     for(int i = 0; i < 10; i++) {
         cin >> arr[i];
     }
-<<<<<<< HEAD
 
-    //finding multiples
-
-    for (int i = 0; i < 10; i++) {
+    cout << "Multiples of 3 in the array are: ";
+    for(int i = 0; i < 10; i++) {
         if(arr[i] % 3 == 0) {
-            cout << arr[i] << " is a multiple of 3" << endl;
+            cout << arr[i] << " ";
         }
     }
-=======
->>>>>>> 28391fe8d538e8c2e978735c0e8edf875eb674b0
 
     return 0;
 
