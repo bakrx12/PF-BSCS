@@ -1,28 +1,19 @@
-#include<iostream> 
+#include <iostream> 
 using namespace std; 
 
-//almost forgot the note 
+int main() { 
 
-//array should be atleast 7 in size lol
-//without using an extra array
-
-    int main() { 
-
-    int nums[3] = {0}; 
-    for (int iNum = 0; iNum < 3; iNum++) { 
+    int nums[7]; 
+    
+    for (int iNum = 0; iNum < 7; iNum++) { 
         cout << "Enter number at index " << iNum << ": "; 
-        cin >> nums[iNum];  }
+        cin >> nums[iNum];  
+    }
         
-
     cout << "\nNumber in reverse order: ";
 
-    //method 1: W/O using another array
-
-
-
-    //method 2: using decrement
-        for (int i = 6; i >= 0; i--) {
-        cout <<  nums[i] << " ";
+    for (int i = 0; i < 7; i++) {
+        cout << nums[6 - i] << " ";
     }
 
     return 0;
