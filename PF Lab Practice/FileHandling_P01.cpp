@@ -49,33 +49,35 @@ int main()
   //to write into a file
         //presuming already present in program's directory
   
-  ofstream txt("Text1.txt");
-  txt << "123";
-  txt.close();
+    ofstream txt("Text1.txt");
+    txt << "123";
+    txt.close();
 
-  //to read a file (only one line) into console
-  int x;
-  ifstream readFile1("Text1.txt"); //dont use read, as it's keyword as identifier, can use Read instead
-  readFile1 >> x;
-  cout << x << endl;
-  readFile1.close(); // good practice to close before reusing
+    //to read a file (only one line) into console
+    int x;
+    ifstream readFile1("Text1.txt"); //dont use read, as it's keyword as identifier, can use Read instead
+    readFile1 >> x;
+    cout << x << endl;
+    readFile1.close(); // good practice to close before reusing
 
-  //to read file and write it into another file (only one line)
-      //persuming both files already exist in directory albiet empty
-  ifstream readFile2("Text1.txt");
-  int reader;
-  ofstream write("Text2.txt"); 
-  readFile2 >> reader;
-  write << reader << endl;
-  readFile2.close();  // good practice to close before reusing
-  write.close();      // good practice to close before reusing
+    //to read file and write it into another file (only one line)
+        //persuming both files already exist in directory albiet empty
+    ifstream readFile2("Text1.txt");
+    int reader;
+    ofstream write("Text2.txt"); 
+    readFile2 >> reader;
+    write << reader << endl;
+    readFile2.close();  // good practice to close before reusing
+    write.close();      // good practice to close before reusing
 
-  //by default, ofstream wipes a file clean (truncates it) every time you open it.
-  //reason for only getting one line previously when reading, no modes were used
-  //Using ios::app allows you to append text to the very end of an existing file.
+    //by default, ofstream wipes a file clean (truncates it) every time you open it.
+    //reason for only getting one line previously when reading, no modes were used
+    //Using ios::app allows you to append text to the very end of an existing file.
 
-  //this is how we use modes:
-  ofstream appendFile("Logbook.txt", ios::app);
+    //this is how we use modes:
+    ofstream appendFile("Logbook.txt", ios::app);
+    //ios:app is used to append data to the end of the file without truncating it.
+    //in other words, it allows you to add new content to the file without deleting the existing content.
     
     if (appendFile.is_open())
     {
@@ -85,5 +87,14 @@ int main()
         cout << "Data appended successfully to Logbook.txt\n";
     }
 
+    //using arrays
+    int arr[] = {1, 2, 3, 4, 5};
+    
+    ofstream arrayFile("ArrayData.txt");
+    for (int i = 0; i < 5; i++)
+    {
+        arrayFile << arr[i] << " ";
+    }
+    arrayFile.close();
   
 }
