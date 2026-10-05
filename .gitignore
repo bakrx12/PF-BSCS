@@ -1,5 +1,5 @@
 .vscode
-PF.code-workspace
+*.code-workspace
 *.exe
 *.zip
 PF Labs/Lab 00 Revision/pls read.txt
