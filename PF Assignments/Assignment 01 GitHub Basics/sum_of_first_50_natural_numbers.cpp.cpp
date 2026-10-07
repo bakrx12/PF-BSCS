@@ -1,6 +1,9 @@
 #include<iostream>
 using namespace std;
 
+// Name: AbuBakr Aslam
+// Roll No: L1S26BSCS0052
+
 // assignment statement:
 // program that calculates the sum of the first 50 natural numbers
 
