@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-// statement:
+// assignment statement:
 // program that calculates the sum of the first 50 natural numbers
 
 int main() {
@@ -12,7 +12,12 @@ int main() {
         sum += i; // Add the current number to the sum
     }
 
-    // Output the result
+    //second version
+
+    int n = 50;
+    int formula_sum = n * (n + 1) / 2; // using formula based verification
+
+    // result
     cout << "The sum of the first 50 natural numbers is: " << sum << endl;
 
     return 0;
