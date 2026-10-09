@@ -6,7 +6,7 @@ int main() {
     int num[5];
     int total = 0;
 
-    ifstream inFile("num.txt");
+    ifstream inFile("numbers.txt");
 
     if (!inFile) {
         cout << "File not found" << endl;
