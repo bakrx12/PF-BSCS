@@ -37,7 +37,7 @@ int main() {
         }
     }
 
-    float average = static_cast<float>(total) / count;
+    float average = (total) / count;
 
     int aboveAverageCount = 0;
     for (int i = 0; i < count; i++) {
