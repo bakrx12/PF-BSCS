@@ -6,8 +6,8 @@ int main() {
     int marks[5];
     int total = 0;
 
-    ifstream inFile("marks.txt");      // Open the file for reading
-
+    ifstream inFile("marks.txt");                   // Open the file for reading
+        
     if (!inFile) {                    // Check
         cout << "File not found!" << endl;
         return 1;
