@@ -11,3 +11,4 @@ PF.code-workspace
 *.opendb
 /.vs/ProjectSettings.json
 *.sqlite
+*.ipch
