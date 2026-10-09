@@ -4,3 +4,10 @@
 *.docx
 PF Labs/Lab 00 Revision/pls read.txt
 PF.code-workspace
+/.vs/PF-BSCS/v16/ipch/AutoPCH/6973a6618ba84371
+*.db
+*.db-shm
+*.db-wal
+*.opendb
+/.vs/ProjectSettings.json
+*.sqlite
