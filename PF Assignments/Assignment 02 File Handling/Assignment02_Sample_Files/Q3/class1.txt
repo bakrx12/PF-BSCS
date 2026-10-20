@@ -1,0 +1,7 @@
+6
+Ali Khan,3.65
+Sara Ahmed,3.92
+Usman Tariq,2.80
+Hina Malik,3.50
+Bilal Raza,3.10
+Ayesha Noor,3.92
