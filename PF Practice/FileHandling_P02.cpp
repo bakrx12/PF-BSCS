@@ -4,21 +4,28 @@ using namespace std;
 
 int main()
 {
-    //part 1
-    //create a file,
+    //create a file, open and read
     //get data from user
 
     char[20];
-    ofstream read("file.txt");
+    ifstream readLib("library.txt");
+    if (!readLib) {
+        cout << "Cannot open library.txt";
+    }
 
-    
+    //reading size of loop
+    int limit = 0;
+    for (int i = 0; i < 1; i++) {
+        readLib >> limit;
+    }
 
-    //part 2
-    // open that file,
-    //ignore "-", then print clean version of that file,
+    for (int i = 0 )
 
-  
-    //part 3
+
+
+    readLib.close();
+
+
     //append file with new data from user
 
 
