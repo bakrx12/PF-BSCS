@@ -3,6 +3,11 @@
 
 using namespace std;
 
+//question 2 answers:
+//replace ignore() with inFile >> junk
+//ignore(1) skips ONLY one character at a time
+
+
 int main() {
     ifstream inFile("meter.txt");
     if (!inFile) {

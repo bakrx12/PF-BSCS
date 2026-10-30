@@ -2,6 +2,10 @@
 #include <fstream>
 using namespace std;
 
+//question 1 answer:
+//because fail() is used befre eof(), it incorrectly read bad data
+//reading int values so char / string values can't be passed here
+
 int main() {
     char fileName[50];
     cout << "Enter file name: ";

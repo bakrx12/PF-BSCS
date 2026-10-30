@@ -3,12 +3,18 @@
 
 using namespace std;
 
+//question 3 answers
+    //Yes, closing/reopening file will have same output
+    //because reopening resets both errors & file position
+
+    //Nothing appears in the second pass output
+    //because it remains in a error
+
 int main() {
     ifstream inFile("innings.txt");
     if (!inFile) {
         cout << "Error: innings.txt doesnt exists" << endl;
-        return 1;
-    }
+        return 1; }
 
     int score;
     int count = 0;
