@@ -17,32 +17,38 @@ output: cdaklXHM
 #include<cstring>
 using namespace std;
 
+//commit history, solve with:
+//1. two seperate arrays without functions
+//2. original array and temp without functions
+//3. original array without temp implemented in functions 
+
 int main() {
+    //array size to remain constant
     char arr[50] = "cXdaHklM";
     int length = strlen(arr);
+    char temp[50];
+    int tempidx = 0;
 
-    int lower = 0, upper = 0;
-    char sortedUpper[50];
-    char sortedLower[50];
-
-    for (int i = 0; i < length; i++) {
-        if (arr[i] >= 65 && arr[i] <= 90) {
-            sortedUpper[upper] = arr[i]; 
-            upper++;
-        }}
+    //order loops in order it needs to be printed
 
     for (int i = 0; i < length; i++) {
         if (arr[i] >= 97 && arr[i] <= 122) {
-            sortedLower[lower] = arr[i]; 
-            lower++;
+            temp[tempidx] = arr[i]; 
+            tempidx++;
+        }}
+
+        for (int i = 0; i < length; i++) {
+        if (arr[i] >= 65 && arr[i] <= 90) {
+            temp[tempidx] = arr[i]; 
+            tempidx++;
         }
 
     }
+        //do it before strcpy to avoid garbadge values
+        temp[tempidx] = '\0';
 
-    sortedLower[lower] = '\0';
-    sortedUpper[upper] = '\0';
-        cout << sortedLower;
-        cout << sortedUpper;
+    //strcpy(desitnation, source);
+    strcpy(arr, temp);
 
-
+    cout << arr;
 }
