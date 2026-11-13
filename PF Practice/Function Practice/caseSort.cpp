@@ -23,26 +23,28 @@ using namespace std;
 //3. original array without temp implemented in functions 
 
 void sortCString(char arr[]) {
-    //array size to remain constant
     int length = strlen(arr);
-    int insertPos = 0; //to track lowercase
+    int idx = 0; 
 
-    for (int i = 0; i < length; i++) {
-        if (arr[i] >= 97 && arr[i] <= 122) {
-            char current = arr[i]; // 
+    for (int i = 0; i< length; i++) {
+            if (arr[i] >= 'a' && arr[i] <= 'z') {
+            char currentLower = arr[i]; 
 
-            for (int j = i; j > insertPos; j--) {
-                arr[j] = arr[j - 1];
-            }
+            for (int j = i; j > idx; j--)
+                {
+                    arr[j] = arr[j - 1];
+                }
 
-            arr[insertPos] = current;
-            insertPos++;
-        }
+        arr[idx] = currentLower;
+        idx++;
     }
-}
+}}
 
-int main() {
-
+int main()
+{
     char arr[50] = "cXdaHklM";
+    sortCString(arr);
     cout << arr;
+
+    return 0;
 }
